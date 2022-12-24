@@ -1,0 +1,145 @@
+@import url('fonts/rubik.css');
+@import url('bootstrap.min.css');
+
+body {
+    font-family: 'Rubik';
+    overflow-x: hidden;
+    background-color: var(--color_two);
+}
+
+:root {
+    --color_one: #1f3341;
+    --color_two: #272830;
+    --color_body: #212529;
+    --theme_light: #4b4998;
+    --theme_dark: #1d2746;
+}
+
+
+.navbar {
+    padding: 30px;
+    background: linear-gradient(to right, var(--theme_light), var(--theme_dark));
+}
+.navbar .logo {
+    font-size: 36px;
+    color: #fff;
+}
+.navbar .subnav .nav-item {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+}
+.navbar .subnav .btn-primary {
+    background-color: var(--theme_light);
+    border-color: var(--theme_light);
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.navbar .subnav .btn-primary:hover {
+    background-color: var(--theme_dark);
+    border-color: var(--theme_dark);
+}
+
+
+.subheading {
+    padding: 15px;
+    background-color: var(--color_one);
+    color: var(--theme_light);
+}
+.subheading .time_updated {
+    float: right !important;
+    margin-top: -30px;
+    margin-right: 30px;
+    letter-spacing: 1px;
+}
+
+
+.mainbody .sidenav {
+    background-color: var(--color_two);
+    padding-top: 2%;
+    position: fixed;
+    height: 100%;
+}
+.mainbody .sidenav .content {
+    padding: 20px;
+    font-size: 14px;
+    margin-left: 10%;
+}
+.mainbody .sidenav .content a {
+    text-decoration: none;
+    color: #fff;
+}
+.mainbody .sidenav .content .fa {
+    background-color: var(--theme_light);
+    padding: 14px;
+    border-radius: 100%;
+}
+
+.mainbody .body {
+    background-color: var(--color_body);
+    margin-left: 24.5%;
+    color: #fff;
+    padding: 25px;
+    padding-top: 55px;
+}
+.mainbody .body .brdr {
+    border: 1px solid #fff;
+}
+.mainbody .body .steps {
+    padding: 0px;
+    font-size: 15px;
+}
+.mainbody .body .steps .balloon .col-2:nth-child(2) span {
+    border-radius: 100%;
+    border: 3px solid #fff;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 14px;
+    padding-right: 14px;
+    background-color: var(--theme_light);
+    z-index: 1 !important;
+}
+.mainbody .body .steps .brr{
+    border-left: 3px solid #fff;
+    margin-top: -0.5%;
+    margin-left: 31px;
+}
+.mainbody .body .steps .balloon .col-8 {
+    padding: 0px;
+    margin-top: -1px;
+}
+.mainbody .body .steps .balloon .col-8 a {
+    color: var(--theme_light);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+
+
+
+
+
+@media screen and (max-width:600px) {
+    .mainbody {
+        overflow-x: hidden;
+    }
+    .mainbody .sidenav {
+        width: 0px;
+        overflow-x: hidden;
+        padding: 0px;
+    }
+    .mainbody .body {
+        margin-left: -3% !important;
+    }
+    .mainbody .body .steps {
+        width: 100%;
+        padding-right: 30px;
+    }
+    .mainbody .body .steps .balloon .col-2:nth-child(2) span{
+        margin-left: -10px;
+    }
+    .mainbody .body .steps .brr {
+        margin-left: 23px;
+    }
+}
